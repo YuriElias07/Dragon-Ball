@@ -1,0 +1,254 @@
+body{
+    background-color: black;
+}
+
+/* CABEÇALHO */
+
+header{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c4495d2;
+    z-index: 1;
+}
+
+.cabecalho{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-family: 'Saiyan Sans', sans-serif;
+    font-size: 25px;
+    padding-right: 80px;
+}
+
+.cabecalho a{
+    color: #fbbc42;
+    text-decoration: none;
+}
+
+.cabecalho a:hover{
+    color: #fbbd42ab;
+}
+
+header img{
+    height: 90px;
+    padding-left: 80px;
+}
+
+/* GOKU */
+
+video{
+    position: fixed;
+    background-size: cover;
+    z-index: -100;
+    opacity: 0.5;
+    width: 100vw;
+}
+
+.caixa_maior_goku{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.caixa_goku{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+.caixa_goku h1{
+    font-size: 80px;
+    font-family: 'Saiyan Sans';
+}
+
+.caixa_goku p{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    max-width: 700px;
+}
+
+.caixa_maior_goku img{
+    height: 510px;
+    margin-top: 40px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+
+/* VEGETA */
+
+.vegeta video{
+    position: fixed;
+    background-size: cover;
+    z-index: -100;
+    opacity: 0.6;
+    width: 100vw;
+}
+
+.caixa_maior_veg{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.caixa_vegeta{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    max-width: 700px;
+}
+
+.caixa_maior_veg img{
+    height: 550px;
+    transform: translateY(0px);
+    animation: float ease-in-out 5s infinite;
+}
+
+
+.caixa_vegeta h1{
+    font-size: 70px;
+    font-family: 'Saiyan Sans';
+}
+
+.caixa_vegeta p{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+/* INICIO */
+
+.inicio video{
+    background-attachment: fixed;
+    bottom: 0px;
+    background-size: cover;
+    z-index: -100;
+    opacity: 0.6;
+    width: 100vw;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu ul{
+    display: flex;
+    gap: 120px;
+}
+
+.menu img{
+    height: 400px;
+    transform: translateY(0px);
+    animation: float 5s infinite ease-in-out;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px; 
+}
+
+.caixa_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.651);
+    padding: 0px 30px;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.caixa_sobre img{
+    position: absolute;
+    margin-top: 360px;
+}
+
+.caixa_sobre h1{
+    font-size: 70px;
+    font-family: 'Saiyan Sans';
+}
+
+.caixa_sobre p{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* GOHAN */
+
+.gohan video{
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    opacity: 0.35;
+}
+
+.caixa_maior_gohan{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 80px;
+}
+
+.caixa_gohan{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    padding: 40px;
+    max-width: 900px;
+    margin-top: 60px;
+}
+
+.caixa_gohan h1{
+    font-size: 80px;
+    font-family: 'Saiyan Sans';
+}
+
+.caixa_gohan p{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.caixa_maior_gohan img{
+    height: 500px;
+    margin-top: 60px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(00px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
